@@ -2,18 +2,18 @@ import "./App.scss";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <header className="header">
-        <div>
-          <a
-            href="https://www.behance.net/gallery/120867209/Picasso-art-website-redesign?tracking_source=curated_galleries_ui-ux"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PICASSO <span>ART</span>
-          </a>
-        </div>
-        <div>
+        <a
+          className="logo"
+          href="https://www.behance.net/gallery/120867209/Picasso-art-website-redesign?tracking_source=curated_galleries_ui-ux"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PICASSO<span>ART</span>
+        </a>
+
+        <div className="flex-container">
           <a href="#" target="_blank" rel="noopener noreferrer">
             Ticket
           </a>
@@ -21,32 +21,39 @@ function App() {
             Address
           </a>
         </div>
-        <div>
-          <a
-            href="https://en.wikipedia.org/wiki/Pablo_Picasso"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="make-it-small"
-              src="https://cdn11.bigcommerce.com/s-feud0ek893/images/stencil/2048x2048/products/10434/20985/bather-opening-a-cabin-32x22-museum-picasso-paris-france_picasso__77879.1582997341.jpg?c=1"
-              alt=""
-            />
+
+        <a
+          className="header-img-link"
+          href="https://en.wikipedia.org/wiki/Pablo_Picasso"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            // className="make-it-small"
+            src="https://cdn11.bigcommerce.com/s-feud0ek893/images/stencil/2048x2048/products/10434/20985/bather-opening-a-cabin-32x22-museum-picasso-paris-france_picasso__77879.1582997341.jpg?c=1"
+            alt=""
+          />
+        </a>
+
+        <div className="flex-container">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            Menu
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            En
           </a>
         </div>
-        <div>
-          <a>Menu</a>
-          <a>En</a>
-        </div>
-        <div>
-          <i></i>
-        </div>
-        <div>
-          <a>Collection ➤</a>
-        </div>
-        <div>
-          <h1>WORLD OF PICASSO</h1>
-        </div>
+
+        <a
+          className="collection"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Collection ➤
+        </a>
+
+        <h1 className="title">WORLD OF PICASSO</h1>
       </header>
 
       <main>
