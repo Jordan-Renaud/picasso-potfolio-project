@@ -3,7 +3,7 @@ import "./App.scss";
 function App() {
   return (
     <div>
-      <header>
+      <header className="header">
         <div>
           <a
             href="https://www.behance.net/gallery/120867209/Picasso-art-website-redesign?tracking_source=curated_galleries_ui-ux"
@@ -28,6 +28,7 @@ function App() {
             rel="noopener noreferrer"
           >
             <img
+              className="make-it-small"
               src="https://cdn11.bigcommerce.com/s-feud0ek893/images/stencil/2048x2048/products/10434/20985/bather-opening-a-cabin-32x22-museum-picasso-paris-france_picasso__77879.1582997341.jpg?c=1"
               alt=""
             />
@@ -52,6 +53,7 @@ function App() {
         <section>
           <div>
             <img
+              className="make-it-small"
               src="https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/original/5ee91a5b30a72c31408b4567/17ef9f08e9fdeabbeeb1a02bcd78f2ea.jpeg"
               alt="Picasso sitting infront of his works"
             />
@@ -64,6 +66,7 @@ function App() {
           </div>
           <div>
             <img
+              className="make-it-small"
               src="https://s.abcnews.com/images/International/pablo-picasso-gty-jef-180219_8x11_992.jpg"
               alt="Picasso in a stripped shirt smoking a cigarette."
             />
@@ -75,6 +78,7 @@ function App() {
               of Pablo Picasso
             </h2>
             <img
+              className="make-it-small"
               src="https://news.artnet.com/app/news-upload/2015/07/5886813703_01fa96bfc2_b-803x1024.jpg"
               alt="Picasso look intently into the camera."
             />
@@ -135,6 +139,7 @@ function App() {
           </nav>
 
           <img
+            className="make-it-small"
             src="http://graphics8.nytimes.com/images/2013/06/02/t-magazine/02lookout-picasso/02lookout-picasso-custom1.jpg"
             alt="Picasso standing infront of his studio with artworks displayed."
           />
@@ -148,6 +153,7 @@ function App() {
             <li>"BLUE" PERIOD</li>
             <figure>
               <img
+                className="make-it-small"
                 src="https://www.hermitagemuseum.org/wps/wcm/connect/645f02d4-3652-4ee3-bea9-81b004b26f23/WOA_IMAGE_1.jpg?MOD=AJPERES&867b6225-12ae-4a40-92e4-e373026a669f"
                 alt="Absithe drinker"
               />
@@ -167,6 +173,7 @@ function App() {
         <section>
           <h2>The Medeu Picasso, Barselona</h2>
           <img
+            className="make-it-small"
             src="https://www.tripendy.com/sites/default/files/gallery/unnamed_205.jpg"
             alt="Art gallery"
           />
@@ -181,14 +188,17 @@ function App() {
           </p>
           <button>Virtual ➤</button>
           <img
+            className="make-it-small"
             src="https://www.citynomads.com/wp-content/uploads/2017/12/edited-221917.-Picasso-a-Barcelona22-Museu-Picasso-Barcelona.jpg"
             alt="gallery"
           />
           <img
+            className="make-it-small"
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/pablo-picasso-raq-med.jpg"
             alt="Painting of lady sitting in a chair"
           />
           <img
+            className="make-it-small"
             src="https://www.pablopicasso.org/images/paintings/mediterranean-landscape.jpg"
             alt="landscape"
           />
@@ -202,6 +212,7 @@ function App() {
           <h2>MUSEUM EXHIBITIONS</h2>
           <figure>
             <img
+              className="make-it-small"
               src="https://www.pkua.fr/wp-content/uploads/2018/06/musee-national-picasso-inside-arch-e1560619314866.jpg"
               alt="Arch framing a painting of Picasso's"
             />
@@ -211,6 +222,7 @@ function App() {
           </figure>
           <figure>
             <img
+              className="make-it-small"
               src="https://www.moma.org/d/c/installation_images/W1siZiIsIjM2MTg5NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDE1MzZ4MTUzNlx1MDAzZSJdXQ.jpg?sha=cc9741c417a51126"
               alt="Doorway framing a painting of Picasso's"
             />
@@ -220,6 +232,7 @@ function App() {
           </figure>
           <figure>
             <img
+              className="make-it-small"
               src="https://images.myguide-cdn.com/moscow/companies/pushkin-museum-of-fine-arts/large/pushkin-museum-of-fine-arts-126123.jpg"
               alt="Looking into a gallery"
             />
@@ -229,6 +242,7 @@ function App() {
           </figure>
           <figure>
             <img
+              className="make-it-small"
               src="http://4.bp.blogspot.com/-aB0P87NNOKE/TlZD0nEUnQI/AAAAAAAABsY/-zrKNLEgXaI/s1600/Interior+del+Museo+Picasso+en+Ma%25CC%2581laga+I.jpg"
               alt="A gallery with people walking around"
             />
