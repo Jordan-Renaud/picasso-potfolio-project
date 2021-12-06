@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="header">
         <a
-          className="logo"
+          className="logo center"
           href="https://www.behance.net/gallery/120867209/Picasso-art-website-redesign?tracking_source=curated_galleries_ui-ux"
           target="_blank"
           rel="noopener noreferrer"
@@ -29,7 +29,6 @@ function App() {
           rel="noopener noreferrer"
         >
           <img
-            // className="make-it-small"
             src="https://cdn11.bigcommerce.com/s-feud0ek893/images/stencil/2048x2048/products/10434/20985/bather-opening-a-cabin-32x22-museum-picasso-paris-france_picasso__77879.1582997341.jpg?c=1"
             alt=""
           />
@@ -45,7 +44,7 @@ function App() {
         </div>
 
         <a
-          className="collection"
+          className="collection center"
           href="#"
           target="_blank"
           rel="noopener noreferrer"
@@ -53,7 +52,7 @@ function App() {
           Collection ➤
         </a>
 
-        <h1 className="title">WORLD OF PICASSO</h1>
+        <h1 className="title center">WORLD OF PICASSO</h1>
       </header>
 
       <main>
