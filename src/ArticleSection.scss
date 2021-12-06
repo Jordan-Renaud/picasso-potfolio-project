@@ -1,0 +1,23 @@
+.ArticleSection {
+  display: grid;
+  grid-template-rows: 3rem, 1fr;
+  grid-template-columns: 3rem, 1fr;
+  grid-template-areas: "side subheading" "side paragraph";
+
+  .side-writing {
+    grid-area: side;
+    width: 100%;
+    height: 100%;
+    color: lightgray;
+    font-family: "Limelight", cursive;
+    transform: rotate(-90deg);
+  }
+
+  .subheading {
+    grid-area: subheading;
+  }
+
+  .paragraph {
+    grid-area: paragraph;
+  }
+}

@@ -3,9 +3,12 @@ import "./ArticleSection.scss";
 export default function ArticleSection({ title, sideWriting, content }) {
   return (
     <section className="ArticleSection">
-      <h2>{title}</h2>
-      <p>{sideWriting}</p>
-      <p>{content}</p>
+      <p className="side-writing">{sideWriting}</p>
+      <h2 className="subheading">
+        {title}
+        <span>➤</span>
+      </h2>
+      <p className="paragraph">{content}</p>
     </section>
   );
 }
