@@ -56,35 +56,30 @@ function App() {
       </header>
 
       <main>
-        <section>
-          <div>
-            <img
-              className="make-it-small"
-              src="https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/original/5ee91a5b30a72c31408b4567/17ef9f08e9fdeabbeeb1a02bcd78f2ea.jpeg"
-              alt="Picasso sitting infront of his works"
-            />
-          </div>
-          <div>
-            <q>
-              I can draw like Raphael, but I need my whole life to draw like a
-              child draws.
-            </q>
-          </div>
-          <div>
-            <img
-              className="make-it-small"
-              src="https://s.abcnews.com/images/International/pablo-picasso-gty-jef-180219_8x11_992.jpg"
-              alt="Picasso in a stripped shirt smoking a cigarette."
-            />
-          </div>
-          <article>
-            <h2>
+        <section className="intro">
+          <img
+            className="responsive indent-left"
+            src="https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/original/5ee91a5b30a72c31408b4567/17ef9f08e9fdeabbeeb1a02bcd78f2ea.jpeg"
+            alt="Picasso sitting infront of his works"
+          />
+          <q className="quote">
+            I can draw like Raphael, but I need my whole life to draw like a
+            child draws.
+          </q>
+          <img
+            className="responsive indent-right"
+            src="https://s.abcnews.com/images/International/pablo-picasso-gty-jef-180219_8x11_992.jpg"
+            alt="Picasso in a stripped shirt smoking a cigarette."
+          />
+
+          <article className="biography">
+            <h2 className="subheading">
               Biography
               <br />
               of Pablo Picasso
             </h2>
             <img
-              className="make-it-small"
+              className="responsive"
               src="https://news.artnet.com/app/news-upload/2015/07/5886813703_01fa96bfc2_b-803x1024.jpg"
               alt="Picasso look intently into the camera."
             />
@@ -95,7 +90,9 @@ function App() {
               ceramicist, stage designer, poet and playwright. He spent most of
               his adult life in France.
             </p>
-            <a href="#">read all</a>
+            <a className="unimportant-link" href="#">
+              read all
+            </a>
           </article>
         </section>
 

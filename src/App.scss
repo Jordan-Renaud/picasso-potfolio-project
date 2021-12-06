@@ -1,5 +1,25 @@
 .App {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
+
+  .make-it-small {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+  .subheading {
+    font-family: "Limelight", cursive;
+    color: #d13b15;
+  }
+
+  .unimportant-link {
+    color: grey;
+    font-size: 0.9rem;
+  }
 
   .header {
     display: grid;
@@ -62,7 +82,7 @@
     .title {
       grid-area: title;
       font-family: "Limelight", cursive;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       border-bottom: 1px solid black;
       padding: 0;
       margin: 0;
@@ -73,8 +93,31 @@
     }
   }
 
-  .make-it-small {
-    width: 5rem;
-    height: 5rem;
+  .intro {
+    text-align: justify;
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+
+    .indent-left {
+      width: calc(100% - 1rem);
+    }
+
+    .indent-right {
+      width: calc(100% - 1rem);
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .quote {
+      margin: 0 1rem;
+    }
+
+    .biography {
+      display: grid;
+      border-top: solid 1px black;
+      border-bottom: solid 1px black;
+      padding: 0 1rem 1rem;
+    }
   }
 }
