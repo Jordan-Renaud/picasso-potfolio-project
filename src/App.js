@@ -1,5 +1,6 @@
-import { articles } from "./data";
+import { articles, newsSnippets } from "./data";
 import ArticleSection from "./ArticleSection";
+import NewsSnippet from "./NewsSnippet";
 import "./App.scss";
 
 function App() {
@@ -105,28 +106,9 @@ function App() {
         />
         <section>
           <nav>
-            <a href="#">
-              Picasso's painting sold at auction for almost $103.5 million
-            </a>
-            <p>14/05/21</p>
-            <a href="#">➤</a>
-            <a href="#">
-              Analysts predicted a record rise in the value of the painting by
-              Picasso
-            </a>
-            <p>29/04/21</p>
-            <a href="#">➤</a>
-            <a href="#">
-              Two portraits by Picasso sold at auction for $33.5 million
-            </a>
-            <p>24/03/21</p>
-            <a href="#">➤</a>
-            <a href="#">Picasso's golden plate</a>
-            <p>27/03/21</p>
-            <a href="#">➤</a>
-            <a href="#">Another news article</a>
-            <p>27/03/21</p>
-            <a href="#">➤</a>
+            {newsSnippets.map((snippet) => (
+              <NewsSnippet title={snippet.title} date={snippet.date} />
+            ))}
           </nav>
 
           <img

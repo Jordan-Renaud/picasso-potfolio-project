@@ -3,7 +3,9 @@ import "./ArticleSection.scss";
 export default function ArticleSection({ title, sideWriting, content }) {
   return (
     <section className="ArticleSection">
-      <p className="side-writing">{sideWriting}</p>
+      <div className="side-writing-container">
+        <p className="side-writing">{sideWriting}</p>
+      </div>
       <h2 className="subheading">
         {title}
         <span className="black">➤</span>

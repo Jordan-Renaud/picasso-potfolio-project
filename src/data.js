@@ -36,3 +36,21 @@ export const articles = [
     ],
   },
 ];
+
+export const newsSnippets = [
+  {
+    title: "Picasso's painting sold at auction for almost $103.5 million",
+    date: "14/05/21",
+  },
+  {
+    title:
+      "Analysts predicted a record rise in the value of the painting by Picasso",
+    date: "29/04/21",
+  },
+  {
+    title: "Two portraits by Picasso sold at auction for $33.5 million",
+    date: "24/03/21",
+  },
+  { title: "Picasso's golden plate", date: "27/03/21" },
+  { title: "Another news article", date: "27/03/21" },
+];
