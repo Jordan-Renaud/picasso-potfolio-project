@@ -104,20 +104,18 @@ function App() {
           sideWriting={articles[0].sideWriting}
           content={articles[0].content}
         />
-        <section>
-          <nav>
-            {newsSnippets.map((snippet) => (
-              <NewsSnippet title={snippet.title} date={snippet.date} />
-            ))}
-          </nav>
+        <section className="news">
+          {newsSnippets.map((snippet) => (
+            <NewsSnippet title={snippet.title} date={snippet.date} />
+          ))}
 
           <img
-            className="make-it-small"
+            className="responsive"
             src="http://graphics8.nytimes.com/images/2013/06/02/t-magazine/02lookout-picasso/02lookout-picasso-custom1.jpg"
             alt="Picasso standing infront of his studio with artworks displayed."
           />
 
-          <p>NEWS</p>
+          <p className="side-writing">NEWS</p>
         </section>
         <section>
           <h2>PAINTINGS ARTIST</h2>
@@ -126,7 +124,7 @@ function App() {
             <li>"BLUE" PERIOD</li>
             <figure>
               <img
-                className="make-it-small"
+                className="responsive"
                 src="https://www.hermitagemuseum.org/wps/wcm/connect/645f02d4-3652-4ee3-bea9-81b004b26f23/WOA_IMAGE_1.jpg?MOD=AJPERES&867b6225-12ae-4a40-92e4-e373026a669f"
                 alt="Absithe drinker"
               />

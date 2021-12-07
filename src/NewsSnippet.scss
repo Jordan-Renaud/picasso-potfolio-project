@@ -1,0 +1,30 @@
+.NewsSnippet {
+  width: 80%;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .title {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+
+    * {
+      display: block;
+      margin: 0;
+    }
+
+    .greyed {
+      color: grey;
+      font-size: 0.8rem;
+    }
+  }
+}

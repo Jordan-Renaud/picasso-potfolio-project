@@ -120,4 +120,20 @@
       padding: 0 1rem 1rem;
     }
   }
+
+  .news {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    .responsive {
+      display: none;
+    }
+
+    .side-writing {
+      grid-area: 1 / 2 / 6 / 6;
+      border-bottom: solid 1px black;
+    }
+  }
 }
