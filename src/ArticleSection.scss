@@ -3,6 +3,9 @@
   grid-template-rows: 3rem, 1fr;
   grid-template-columns: 3rem, 1fr;
   grid-template-areas: "side subheading" "side paragraph";
+  gap: 1rem;
+  border-bottom: solid 1px black;
+  width: 100%;
 
   .side-writing {
     grid-area: side;
@@ -10,14 +13,24 @@
     height: 100%;
     color: lightgray;
     font-family: "Limelight", cursive;
-    transform: rotate(-90deg);
+    margin: 0;
   }
 
   .subheading {
     grid-area: subheading;
+    margin: 0;
+
+    .black {
+      color: black;
+    }
   }
 
   .paragraph {
     grid-area: paragraph;
+    text-align: justify;
+    padding-right: 1rem;
+    .inline {
+      display: inline;
+    }
   }
 }

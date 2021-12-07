@@ -6,9 +6,9 @@ export default function ArticleSection({ title, sideWriting, content }) {
       <p className="side-writing">{sideWriting}</p>
       <h2 className="subheading">
         {title}
-        <span>➤</span>
+        <span className="black">➤</span>
       </h2>
-      <p className="paragraph">{content}</p>
+      <p className="paragraph">{content.map((paragraph) => paragraph)}</p>
     </section>
   );
 }
