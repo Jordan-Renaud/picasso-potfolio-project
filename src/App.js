@@ -115,7 +115,7 @@ function App() {
             alt="Picasso standing infront of his studio with artworks displayed."
           />
 
-          <p className="side-writing">NEWS</p>
+          <div className="side-writing"></div>
         </section>
         <section>
           <h2>PAINTINGS ARTIST</h2>
