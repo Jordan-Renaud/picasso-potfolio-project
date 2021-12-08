@@ -1,6 +1,7 @@
-import { articles, newsSnippets } from "./data";
+import { articles, newsSnippets, paintings } from "./data";
 import ArticleSection from "./ArticleSection";
 import NewsSnippet from "./NewsSnippet";
+import PaintingDisplay from "./PaintingDisplay";
 import "./App.scss";
 
 function App() {
@@ -117,7 +118,7 @@ function App() {
 
           <div className="side-writing"></div>
         </section>
-        <section>
+        <section className="paintings">
           <h2>PAINTINGS ARTIST</h2>
           <ul>
             <li>EARLY WORK</li>
@@ -135,7 +136,7 @@ function App() {
             <li>"PINK" PERIOD</li>
             <li>"AFRICAN" PERIOD</li>
             <li>CUBISM</li>
-            <li>"classNameIC" PERIOD</li>
+            <li>"CLASSIC" PERIOD</li>
             <li>SURREALISM</li>
             <li>WAR IN SPAIN. GUERNICA</li>
             <li>LATE WORKS</li>
