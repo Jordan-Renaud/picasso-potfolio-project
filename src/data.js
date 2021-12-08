@@ -1,7 +1,10 @@
+import creation from "./images/creation.png";
+import muses from "./images/muses.png";
+
 export const articles = [
   {
     title: "Creation",
-    sideWriting: "CREATION",
+    sideWriting: creation,
     content: [
       <p>
         The creative biography of Pablo Picasso is truly extreme. Marc Chagall
@@ -22,7 +25,7 @@ export const articles = [
   },
   {
     title: "Muses of Picasso",
-    sideWriting: "MUSES",
+    sideWriting: muses,
     content: [
       <p className="inline">Unlike those who remained "outside the frame",</p>,
       <strong className="inline"> these seven women </strong>,

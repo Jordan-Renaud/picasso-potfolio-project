@@ -1,26 +1,17 @@
 .ArticleSection {
   display: grid;
   grid-template-rows: 3rem, 1fr;
-  grid-template-columns: 4rem, 1fr;
+  grid-template-columns: 1fr, 4fr;
   grid-template-areas: "side subheading" "side paragraph";
   gap: 1rem;
   border-bottom: solid 1px black;
   width: 100%;
 
-  .side-writing-container {
+  .side-writing {
     grid-area: side;
-    width: 4rem;
-    height: 100%;
-
-    .side-writing {
-      color: lightgray;
-      font-family: "Limelight", cursive;
-      font-size: 4rem;
-      margin: 0;
-      position: relative;
-      transform: rotate(-90deg);
-      top: 20rem;
-    }
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 13vw;
   }
 
   .subheading {
