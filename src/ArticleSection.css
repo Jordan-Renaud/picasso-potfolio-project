@@ -1,0 +1,47 @@
+.ArticleSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem, 1fr;
+      grid-template-rows: 3rem, 1fr;
+  -ms-grid-columns: 1fr, 4fr;
+      grid-template-columns: 1fr, 4fr;
+      grid-template-areas: "side subheading" "side paragraph";
+  gap: 1rem;
+  border-bottom: solid 1px black;
+  width: 100%;
+}
+
+.ArticleSection .side-writing {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: side;
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 13vw;
+}
+
+.ArticleSection .subheading {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: subheading;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.ArticleSection .subheading .black {
+  color: black;
+}
+
+.ArticleSection .paragraph {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: paragraph;
+  text-align: justify;
+  padding-right: 1rem;
+}
+
+.ArticleSection .paragraph .inline {
+  display: inline;
+}
+/*# sourceMappingURL=ArticleSection.css.map */

@@ -1,0 +1,171 @@
+.App {
+  font-family: "Roboto", sans-serif;
+}
+
+.App .make-it-small {
+  width: 5rem;
+  height: 5rem;
+}
+
+.App .responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.App .subheading {
+  font-family: "Limelight", cursive;
+  color: #d13b15;
+}
+
+.App .unimportant-link {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.App .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (6vh)[4];
+      grid-template-rows: repeat(4, 6vh);
+      grid-template-areas: ". header-img-link header-img-link header-img-link ." "logo logo logo logo logo" "logo logo logo logo logo" "collection title title title title";
+}
+
+.App .header .center {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .header .header-img-link {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: header-img-link;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.App .header .header-img-link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 90%;
+     object-position: center 90%;
+}
+
+.App .header .logo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: logo;
+  text-decoration: none;
+  color: black;
+  font-family: "Limelight", cursive;
+  font-size: 1.8rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.App .header .logo span {
+  color: #d13b15;
+  position: relative;
+  top: 0.5rem;
+}
+
+.App .header .collection {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: collection;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.App .header .title {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: title;
+  font-family: "Limelight", cursive;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.App .header .flex-container {
+  display: none;
+}
+
+.App .intro {
+  text-align: justify;
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.App .intro .indent-left {
+  width: calc(100% - 1rem);
+}
+
+.App .intro .indent-right {
+  width: calc(100% - 1rem);
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.App .intro .quote {
+  margin: 0 1rem;
+}
+
+.App .intro .biography {
+  display: -ms-grid;
+  display: grid;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  padding: 0 1rem 1rem;
+}
+
+.App .news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  width: 100vw;
+}
+
+.App .news .responsive {
+  display: none;
+}
+
+.App .news .side-writing {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 6 / 3;
+  border-bottom: solid 1px black;
+  background-image: url("./images/news.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+/*# sourceMappingURL=App.css.map */
