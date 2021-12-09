@@ -27,6 +27,16 @@
     font-size: 0.9rem;
   }
 
+  .indent-left {
+    width: calc(100% - 1rem);
+  }
+
+  .indent-right {
+    width: calc(100% - 1rem);
+    margin-left: auto;
+    margin-right: 0;
+  }
+
   .header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -105,16 +115,6 @@
     display: grid;
     gap: 1rem;
 
-    .indent-left {
-      width: calc(100% - 1rem);
-    }
-
-    .indent-right {
-      width: calc(100% - 1rem);
-      margin-left: auto;
-      margin-right: 0;
-    }
-
     .quote {
       margin: 0 1rem;
     }
@@ -150,12 +150,21 @@
     .heading {
       border-bottom: solid 1px black;
       margin: 0;
+      padding: 1rem 0;
     }
 
     ul {
       display: grid;
       margin: 0;
       padding: 0;
+    }
+  }
+
+  .museum {
+    display: grid;
+
+    .indent-right {
+      padding-left: 1rem;
     }
   }
 }

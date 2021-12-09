@@ -2,6 +2,7 @@ import { articles, newsSnippets, paintings } from "./data";
 import ArticleSection from "./ArticleSection";
 import NewsSnippet from "./NewsSnippet";
 import PaintingDisplay from "./PaintingDisplay";
+import artGallery from "./images/artGallery.png";
 import "./App.scss";
 
 function App() {
@@ -127,11 +128,11 @@ function App() {
             ))}
           </ul>
         </section>
-        <section>
-          <h2>The Medeu Picasso, Barselona</h2>
+        <section className="museum">
+          <h2 className="subheading">The Medeu Picasso, Barselona</h2>
           <img
-            className="make-it-small"
-            src="https://www.tripendy.com/sites/default/files/gallery/unnamed_205.jpg"
+            className="responsive indent-left"
+            src={artGallery}
             alt="Art gallery"
           />
           <p>
@@ -145,7 +146,7 @@ function App() {
           </p>
           <button>Virtual ➤</button>
           <img
-            className="make-it-small"
+            className="responsive indent-right"
             src="https://www.citynomads.com/wp-content/uploads/2017/12/edited-221917.-Picasso-a-Barcelona22-Museu-Picasso-Barcelona.jpg"
             alt="gallery"
           />
@@ -156,7 +157,7 @@ function App() {
           />
           <img
             className="make-it-small"
-            src="https://www.pablopicasso.org/images/paintings/mediterranean-landscape.jpg"
+            src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MDlfMTE2/MDAxNTkxNjQ5NDE2OTM5.hoRAwECpqZ7Cr0LPnrPOIOblY_LRcx-x-FoGj5LfWf4g.Sp8ymvQvVYRDFQXAW_NqAEsmg9TAv1x1UNoEBCZ4gW8g.JPEG.nadal_2020wkid/89497b26ba6fc57d58f252d806a5f24f.jpg?type=w800"
             alt="landscape"
           />
           <p>
