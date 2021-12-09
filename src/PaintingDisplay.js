@@ -8,22 +8,35 @@ export default function PaintingDisplay({ categoryData }) {
   const year = categoryData.year;
 
   const [showPainting, setShowPainting] = useState(false);
+  const [importantHeading, setImportantHeading] = useState("not-important");
 
   function showHidePainting() {
     setShowPainting(showPainting ? false : true);
+    setImportantHeading(
+      importantHeading === "not-important" ? "important" : "not-important"
+    );
   }
 
   return (
     <li
-      className={`PaintingDisplay ${showPainting ? "show" : "hide"}`}
+      className={`PaintingDisplay ${importantHeading}`}
       onClick={showHidePainting}
     >
-      <h2>{catergory}</h2>
-      <figure>
-        <img className="responsive" src={paintingImage} alt="Absithe drinker" />
-        <figcaption>{title}</figcaption>
-        <p>{`${year} year`}</p>
-        <a href="#">Next ➤</a>
+      <p className="catergory-title">{catergory}</p>
+
+      <figure className={`${showPainting ? "show" : "hide"}`}>
+        <img
+          className="responsive painting"
+          src={paintingImage}
+          alt="Absithe drinker"
+        />
+        <figcaption className="caption">
+          {title}
+          <span>, {`${year} year`}</span>
+        </figcaption>
+        <a className="next" href="#">
+          Next ➤
+        </a>
       </figure>
     </li>
   );

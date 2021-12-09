@@ -119,7 +119,7 @@ function App() {
           <div className="side-writing"></div>
         </section>
         <section className="paintings">
-          <h2>PAINTINGS ARTIST</h2>
+          <h2 className="heading">PAINTINGS ARTIST</h2>
 
           <ul>
             {paintings.map((painting) => (

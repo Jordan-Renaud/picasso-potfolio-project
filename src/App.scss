@@ -16,6 +16,12 @@
     color: #d13b15;
   }
 
+  .heading {
+    font-family: "Limelight", cursive;
+    font-size: 2rem;
+    text-align: center;
+  }
+
   .unimportant-link {
     color: grey;
     font-size: 0.9rem;
@@ -137,6 +143,19 @@
       background-image: url("./images/news.png");
       background-repeat: repeat-y;
       background-size: contain;
+    }
+  }
+
+  .paintings {
+    .heading {
+      border-bottom: solid 1px black;
+      margin: 0;
+    }
+
+    ul {
+      display: grid;
+      margin: 0;
+      padding: 0;
     }
   }
 }

@@ -17,6 +17,12 @@
   color: #d13b15;
 }
 
+.App .heading {
+  font-family: "Limelight", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .App .unimportant-link {
   color: grey;
   font-size: 0.9rem;
@@ -167,5 +173,18 @@
   background-image: url("./images/news.png");
   background-repeat: repeat-y;
   background-size: contain;
+}
+
+.App .paintings .heading {
+  border-bottom: solid 1px black;
+  margin: 0;
+  padding: 1rem;
+}
+
+.App .paintings ul {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=App.css.map */

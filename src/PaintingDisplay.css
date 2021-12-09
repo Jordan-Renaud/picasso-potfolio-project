@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=PaintingDisplay.css.map */
+.PaintingDisplay {
+  list-style-type: none;
+  border-bottom: solid 1px black;
+  text-align: center;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.PaintingDisplay:hover {
+  cursor: pointer;
+}
+
+.PaintingDisplay.important .catergory-title {
+  color: black;
+  font-weight: bold;
+}
+
+.PaintingDisplay.not-important {
+  color: grey;
+}
+
+.PaintingDisplay .show {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr, 2rem;
+      grid-template-columns: 1fr, 2rem;
+  -ms-grid-rows: 2rem, 1fr;
+      grid-template-rows: 2rem, 1fr;
+      grid-template-areas: "caption next" "painting painting";
+  width: 100%;
+  margin: 0;
+}
+
+.PaintingDisplay .show .caption {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: caption;
+  display: block;
+}
+
+.PaintingDisplay .show .next {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: next;
+}
+
+.PaintingDisplay .show .painting {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: painting;
+}
+
+.PaintingDisplay .hide {
+  display: none;
+}
+/*# sourceMappingURL=PaintingDisplay.css.map */
