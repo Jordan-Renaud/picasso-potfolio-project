@@ -162,8 +162,37 @@
 
   .museum {
     display: grid;
+    grid-template-areas: "title" "image1" "paragraph" "button" "image2";
 
-    .indent-right {
+    .subheading {
+      grid-area: title;
+      border-bottom: solid 1px black;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    img.indent-left {
+      grid-area: image1;
+    }
+
+    .paragraph {
+      grid-area: paragraph;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    button {
+      grid-area: button;
+      padding: 1rem;
+      width: 50%;
+      background-color: transparent;
+      border: solid 1px black;
+      justify-self: center;
+      margin-bottom: 1rem;
+    }
+
+    img.indent-right {
+      grid-area: image2;
       padding-left: 1rem;
     }
   }

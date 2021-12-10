@@ -135,7 +135,7 @@ function App() {
             src={artGallery}
             alt="Art gallery"
           />
-          <p>
+          <p className="paragraph">
             Picasso lived, worked and worked in many European cities. Thanks to
             the indefatigable character, enormous capacity for work and natural
             talent of the artist, his work has left a mark in many European
