@@ -169,17 +169,19 @@ function App() {
             youth and adolescence and continued until his death.
           </p>
         </section>
-        <section>
-          <h2>MUSEUM EXHIBITIONS</h2>
-          {exhibits.map((exhibit) => (
-            <MuseumCard
-              imageSrc={exhibit.imageSrc}
-              imageAlt={exhibit.imageAlt}
-              museumName={exhibit.museumName}
-              location={exhibit.location}
-            />
-          ))}
-          <div>➤</div>
+        <section className="exhibit">
+          <h2 className="heading">MUSEUM EXHIBITIONS</h2>
+          <div className="swipe-container">
+            {exhibits.map((exhibit) => (
+              <MuseumCard
+                imageSrc={exhibit.imageSrc}
+                imageAlt={exhibit.imageAlt}
+                museumName={exhibit.museumName}
+                location={exhibit.location}
+              />
+            ))}
+            <div>➤</div>
+          </div>
         </section>
         <ArticleSection
           title={articles[1].title}

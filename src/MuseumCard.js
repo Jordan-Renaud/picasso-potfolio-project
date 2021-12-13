@@ -7,11 +7,11 @@ export default function MuseumCard({
   location,
 }) {
   return (
-    <figure>
+    <figure className="MuseumCard">
       <img src={imageSrc} alt={imageAlt} />
       <figcaption>
         <p>{museumName}</p>
-        <p>{location}</p>
+        <p className="unimportant-link">{location}</p>
       </figcaption>
     </figure>
   );
