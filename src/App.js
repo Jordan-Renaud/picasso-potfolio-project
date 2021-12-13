@@ -1,7 +1,8 @@
-import { articles, newsSnippets, paintings } from "./data";
+import { articles, newsSnippets, paintings, exhibits } from "./data";
 import ArticleSection from "./ArticleSection";
 import NewsSnippet from "./NewsSnippet";
 import PaintingDisplay from "./PaintingDisplay";
+import MuseumCard from "./MuseumCard";
 import artGallery from "./images/artGallery.png";
 import "./App.scss";
 
@@ -170,46 +171,14 @@ function App() {
         </section>
         <section>
           <h2>MUSEUM EXHIBITIONS</h2>
-          <figure>
-            <img
-              className="make-it-small"
-              src="https://www.pkua.fr/wp-content/uploads/2018/06/musee-national-picasso-inside-arch-e1560619314866.jpg"
-              alt="Arch framing a painting of Picasso's"
+          {exhibits.map((exhibit) => (
+            <MuseumCard
+              imageSrc={exhibit.imageSrc}
+              imageAlt={exhibit.imageAlt}
+              museumName={exhibit.museumName}
+              location={exhibit.location}
             />
-            <figcaption>
-              MUSEE NATIONAL PICASSO <span>FRANCE, PARIS</span>
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              className="make-it-small"
-              src="https://www.moma.org/d/c/installation_images/W1siZiIsIjM2MTg5NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDE1MzZ4MTUzNlx1MDAzZSJdXQ.jpg?sha=cc9741c417a51126"
-              alt="Doorway framing a painting of Picasso's"
-            />
-            <figcaption>
-              MOMA <span>USA, NEW YORK</span>
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              className="make-it-small"
-              src="https://images.myguide-cdn.com/moscow/companies/pushkin-museum-of-fine-arts/large/pushkin-museum-of-fine-arts-126123.jpg"
-              alt="Looking into a gallery"
-            />
-            <figcaption>
-              THE PUSHKIN MUSEUM <span>RUSSIA, MOSCOW</span>
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              className="make-it-small"
-              src="http://4.bp.blogspot.com/-aB0P87NNOKE/TlZD0nEUnQI/AAAAAAAABsY/-zrKNLEgXaI/s1600/Interior+del+Museo+Picasso+en+Ma%25CC%2581laga+I.jpg"
-              alt="A gallery with people walking around"
-            />
-            <figcaption>
-              MUSEO PICASSO <span>SPAIN, MALAGA</span>
-            </figcaption>
-          </figure>
+          ))}
           <div>➤</div>
         </section>
         <ArticleSection

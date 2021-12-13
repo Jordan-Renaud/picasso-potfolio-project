@@ -124,3 +124,34 @@ export const paintings = [
     year: "1971",
   },
 ];
+
+export const exhibits = [
+  {
+    imageSrc:
+      "https://www.pkua.fr/wp-content/uploads/2018/06/musee-national-picasso-inside-arch-e1560619314866.jpg",
+    imageAlt: "Arch framing a painting of Picasso's",
+    museumName: "MUSEE NATIONAL PICASSO",
+    location: "FRANCE, PARIS",
+  },
+  {
+    imageSrc:
+      "https://www.moma.org/d/c/installation_images/W1siZiIsIjM2MTg5NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDE1MzZ4MTUzNlx1MDAzZSJdXQ.jpg?sha=cc9741c417a51126",
+    imageAlt: "Doorway framing a painting of Picasso's",
+    museumName: "MOMA",
+    location: "USA, NEW YORK",
+  },
+  {
+    imageSrc:
+      "https://images.myguide-cdn.com/moscow/companies/pushkin-museum-of-fine-arts/large/pushkin-museum-of-fine-arts-126123.jpg",
+    imageAlt: "Looking into a gallery",
+    museumName: "THE PUSHKIN MUSEUM",
+    location: "RUSSIA, MOSCOW",
+  },
+  {
+    imageSrc:
+      "http://4.bp.blogspot.com/-aB0P87NNOKE/TlZD0nEUnQI/AAAAAAAABsY/-zrKNLEgXaI/s1600/Interior+del+Museo+Picasso+en+Ma%25CC%2581laga+I.jpg",
+    imageAlt: "A gallery with people walking around",
+    museumName: "MUSEO PICASSO",
+    location: "SPAIN, MALAGA",
+  },
+];
