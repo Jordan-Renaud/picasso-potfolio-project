@@ -235,5 +235,23 @@
       margin: 0;
       padding: 1rem 0;
     }
+
+    .swipe-container {
+      overflow-x: scroll;
+      display: flex;
+      width: 100vw;
+      .see-more {
+        flex: 0 0 20vw;
+        margin: 0;
+        width: 80vw;
+        border-right: solid 1px black;
+        border-bottom: solid 1px black;
+        scroll-snap-align: start;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 }

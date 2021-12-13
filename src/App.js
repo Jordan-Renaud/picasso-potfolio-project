@@ -180,7 +180,7 @@ function App() {
                 location={exhibit.location}
               />
             ))}
-            <div>➤</div>
+            <div className="see-more">➤</div>
           </div>
         </section>
         <ArticleSection

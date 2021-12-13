@@ -1,8 +1,12 @@
 .MuseumCard {
+  flex: 0 0 80vw;
   margin: 0;
   width: 80vw;
   border-right: solid 1px black;
   border-bottom: solid 1px black;
+  scroll-snap-align: start;
+  scroll-snap-type: x mandatory;
+
   img {
     object-fit: cover;
     height: 30rem;
