@@ -162,7 +162,16 @@
 
   .museum {
     display: grid;
-    grid-template-areas: "title" "image1" "paragraph" "button" "image2";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "title title title title title"
+      "image1 image1 image1 image1 image1"
+      "paragraph paragraph paragraph paragraph paragraph"
+      ". button button button ."
+      "image2 image2 image2 image2 image2"
+      "imageContainer imageContainer imageContainer imageContainer imageContainer"
+      "paragraph2 paragraph2 paragraph2 paragraph2 paragraph2";
+    border-bottom: solid 1px black;
 
     .subheading {
       grid-area: title;
@@ -194,6 +203,28 @@
     img.indent-right {
       grid-area: image2;
       padding-left: 1rem;
+    }
+
+    .image-container {
+      grid-area: imageContainer;
+      height: 8rem;
+      display: flex;
+      border-top: solid 1px black;
+      border-bottom: solid 1px black;
+    }
+
+    img.small-image {
+      object-fit: contain;
+      align-self: center;
+    }
+
+    .border-left {
+      border-left: solid 1px black;
+    }
+
+    .paragraph2 {
+      grid-area: paragraph2;
+      padding: 1rem;
     }
   }
 }

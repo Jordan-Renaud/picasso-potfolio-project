@@ -150,17 +150,19 @@ function App() {
             src="https://www.citynomads.com/wp-content/uploads/2017/12/edited-221917.-Picasso-a-Barcelona22-Museu-Picasso-Barcelona.jpg"
             alt="gallery"
           />
-          <img
-            className="make-it-small"
-            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/pablo-picasso-raq-med.jpg"
-            alt="Painting of lady sitting in a chair"
-          />
-          <img
-            className="make-it-small"
-            src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MDlfMTE2/MDAxNTkxNjQ5NDE2OTM5.hoRAwECpqZ7Cr0LPnrPOIOblY_LRcx-x-FoGj5LfWf4g.Sp8ymvQvVYRDFQXAW_NqAEsmg9TAv1x1UNoEBCZ4gW8g.JPEG.nadal_2020wkid/89497b26ba6fc57d58f252d806a5f24f.jpg?type=w800"
-            alt="landscape"
-          />
-          <p>
+          <div className="image-container">
+            <img
+              className="responsive small-image"
+              src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/pablo-picasso-raq-med.jpg"
+              alt="Painting of lady sitting in a chair"
+            />
+            <img
+              className="responsive small-image border-left"
+              src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MDlfMTE2/MDAxNTkxNjQ5NDE2OTM5.hoRAwECpqZ7Cr0LPnrPOIOblY_LRcx-x-FoGj5LfWf4g.Sp8ymvQvVYRDFQXAW_NqAEsmg9TAv1x1UNoEBCZ4gW8g.JPEG.nadal_2020wkid/89497b26ba6fc57d58f252d806a5f24f.jpg?type=w800"
+              alt="landscape"
+            />
+          </div>
+          <p className="paragraph2">
             In particular, the Museu Picasso reveals Picasso's relationship
             witht the city of Catalonia, a relationship that was shaped in his
             youth and adolescence and continued until his death.
