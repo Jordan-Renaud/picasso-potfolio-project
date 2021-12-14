@@ -4,6 +4,8 @@
     url("./fonts/FontsFree-Net-MAK-bold.woff") format("woff");
 }
 
+$border-design: 1px solid black;
+
 .App {
   font-family: "Roboto", sans-serif;
 
@@ -64,8 +66,8 @@
 
     .header-img-link {
       grid-area: header-img-link;
-      border-right: 1px solid black;
-      border-left: 1px solid black;
+      border-right: $border-design;
+      border-left: $border-design;
 
       img {
         width: 100%;
@@ -77,8 +79,8 @@
 
     .logo {
       grid-area: logo;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
+      border-top: $border-design;
+      border-bottom: $border-design;
       img {
         height: 80%;
         object-fit: contain;
@@ -90,8 +92,8 @@
       font-size: 0.7rem;
       text-decoration: none;
       color: black;
-      border-right: 1px solid black;
-      border-bottom: 1px solid black;
+      border-right: $border-design;
+      border-bottom: $border-design;
       padding: 0;
       margin: 0;
     }
@@ -100,7 +102,7 @@
       grid-area: title;
       font-family: MAKBold;
       font-size: 1.5rem;
-      border-bottom: 1px solid black;
+      border-bottom: $border-design;
       padding: 0;
       margin: 0;
     }
