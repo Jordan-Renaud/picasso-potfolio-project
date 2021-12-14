@@ -1,8 +1,15 @@
-import { articles, newsSnippets, paintings, exhibits } from "./data";
+import {
+  articles,
+  newsSnippets,
+  paintings,
+  exhibits,
+  navigationSections,
+} from "./data";
 import ArticleSection from "./ArticleSection";
 import NewsSnippet from "./NewsSnippet";
 import PaintingDisplay from "./PaintingDisplay";
 import MuseumCard from "./MuseumCard";
+import NavMenu from "./NavMenu";
 import artGallery from "./images/artGallery.png";
 import "./App.scss";
 
@@ -190,47 +197,9 @@ function App() {
         />
         <footer>
           <nav>
-            <a href="#">Contact us</a>
-            <a href="#">Pablo Picasso</a>
-            <ul>
-              <li>Biography</li>
-              <li>Childhood and years of study</li>
-              <li>Personal life</li>
-              <li>Awards</li>
-              <li>Image in culture</li>
-            </ul>
-            <a href="#">Periodisation</a>
-            <ul>
-              <li>Early period</li>
-              <li>"Blue" period</li>
-              <li>"Pink" period</li>
-              <li>"African" period</li>
-              <li>Cubism</li>
-              <li>"classNameic" period</li>
-              <li>Surrealism</li>
-              <li>War. Guernica</li>
-              <li>Late works</li>
-            </ul>
-            <a href="#">Picasso Museums</a>
-            <ul>
-              <li>The Museo Picasso, Barselona</li>
-              <li>Museo Reina Sofia, Madrid</li>
-              <li>Museo Picasso, Malaga</li>
-              <li>Moma, New York</li>
-              <li>Musee National Picasso, Paris</li>
-              <li>The Pushkin Museum, Moskow</li>
-              <li>Hermitage, Saint Petersburg</li>
-              <li>Museo Picasso, Cairo</li>
-              <li>...</li>
-            </ul>
-            <a href="#">Other</a>
-            <ul>
-              <li>Photo</li>
-              <li>Video</li>
-              <li>Exhibitions</li>
-              <li>Books</li>
-              <li>Quote</li>
-            </ul>
+            {navigationSections.map((section) => (
+              <NavMenu title={section.title} categories={section.catergories} />
+            ))}
           </nav>
         </footer>
       </main>

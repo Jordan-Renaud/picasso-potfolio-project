@@ -155,3 +155,49 @@ export const exhibits = [
     location: "SPAIN, MALAGA",
   },
 ];
+
+export const navigationSections = [
+  { title: "Contact us", catergories: [] },
+  {
+    title: "Pablo Picasso",
+    catergories: [
+      "Biography",
+      "Childhood and years of study",
+      "Personal life",
+      "Awards",
+      "Image in culture",
+    ],
+  },
+  {
+    title: "Periodisation",
+    catergories: [
+      "Early period",
+      '"Blue" period',
+      '"Pink" period',
+      '"African" period',
+      "Cubism",
+      '"classNameic" period',
+      "Surrealism",
+      "War. Guernica",
+      "Late works",
+    ],
+  },
+  {
+    title: "Picasso Museums",
+    catergories: [
+      "The Museo Picasso, Barselona",
+      "Museo Reina Sofia, Madrid",
+      "Museo Picasso, Malaga",
+      "Moma, New York",
+      "Musee National Picasso, Paris",
+      "The Pushkin Museum, Moskow",
+      "Hermitage, Saint Petersburg",
+      "Museo Picasso, Cairo",
+      "...",
+    ],
+  },
+  {
+    title: "Other",
+    catergories: ["Photo", "Video", "Exhibitions", "Books", "Quote"],
+  },
+];
