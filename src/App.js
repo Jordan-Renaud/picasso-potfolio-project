@@ -192,10 +192,6 @@ function App() {
           <nav>
             <a href="#">Contact us</a>
             <a href="#">Pablo Picasso</a>
-            <a href="#">Periodisation</a>
-            <a href="#">Picasso Museums</a>
-            <a href="#">Other</a>
-            <div></div>
             <ul>
               <li>Biography</li>
               <li>Childhood and years of study</li>
@@ -203,6 +199,7 @@ function App() {
               <li>Awards</li>
               <li>Image in culture</li>
             </ul>
+            <a href="#">Periodisation</a>
             <ul>
               <li>Early period</li>
               <li>"Blue" period</li>
@@ -214,6 +211,7 @@ function App() {
               <li>War. Guernica</li>
               <li>Late works</li>
             </ul>
+            <a href="#">Picasso Museums</a>
             <ul>
               <li>The Museo Picasso, Barselona</li>
               <li>Museo Reina Sofia, Madrid</li>
@@ -225,6 +223,7 @@ function App() {
               <li>Museo Picasso, Cairo</li>
               <li>...</li>
             </ul>
+            <a href="#">Other</a>
             <ul>
               <li>Photo</li>
               <li>Video</li>
