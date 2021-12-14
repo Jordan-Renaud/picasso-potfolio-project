@@ -77,17 +77,11 @@
 
     .logo {
       grid-area: logo;
-      text-decoration: none;
-      color: black;
-      font-family: MAKBold;
-      font-size: 1.8rem;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
-
-      span {
-        color: #d13b15;
-        position: relative;
-        top: 0.5rem;
+      img {
+        height: 80%;
+        object-fit: contain;
       }
     }
 

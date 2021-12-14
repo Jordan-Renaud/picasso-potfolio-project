@@ -92,18 +92,14 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: logo;
-  text-decoration: none;
-  color: black;
-  font-family: MAKBold;
-  font-size: 1.8rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-.App .header .logo span {
-  color: #d13b15;
-  position: relative;
-  top: 0.5rem;
+.App .header .logo img {
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .App .header .collection {

@@ -11,6 +11,7 @@ import PaintingDisplay from "./PaintingDisplay";
 import MuseumCard from "./MuseumCard";
 import NavMenu from "./NavMenu";
 import artGallery from "./images/artGallery.png";
+import logo from "./images/logo.png";
 import "./App.scss";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          PICASSO<span>ART</span>
+          <img className="responsive" src={logo} />
         </a>
 
         <div className="flex-container">
