@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MAKBold;
+  src: url("./fonts/FontsFree-Net-MAK-bold.ttf") format("ttf"), url("./fonts/FontsFree-Net-MAK-bold.woff") format("woff");
+}
+
 .App {
   font-family: "Roboto", sans-serif;
 }
@@ -13,12 +18,13 @@
 }
 
 .App .subheading {
-  font-family: "Limelight", cursive;
+  font-family: MAKBold;
   color: #d13b15;
+  font-size: 1.8rem;
 }
 
 .App .heading {
-  font-family: "Limelight", cursive;
+  font-family: MAKBold;
   font-size: 2rem;
   text-align: center;
 }
@@ -88,7 +94,7 @@
   grid-area: logo;
   text-decoration: none;
   color: black;
-  font-family: "Limelight", cursive;
+  font-family: MAKBold;
   font-size: 1.8rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -118,7 +124,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: title;
-  font-family: "Limelight", cursive;
+  font-family: MAKBold;
   font-size: 1.5rem;
   border-bottom: 1px solid black;
   padding: 0;
