@@ -1,0 +1,26 @@
+.NavMenu {
+  text-align: center;
+  border-bottom: solid 1px black;
+  padding: 1rem 0;
+}
+
+.NavMenu .title {
+  margin: 0;
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+}
+
+.NavMenu .title.hide {
+  color: grey;
+}
+
+.NavMenu .title.show {
+  padding-bottom: 1rem;
+}
+
+.NavMenu li {
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=NavMenu.css.map */

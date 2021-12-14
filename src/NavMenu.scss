@@ -1,0 +1,24 @@
+.NavMenu {
+  text-align: center;
+  border-bottom: solid 1px black;
+  padding: 1rem 0;
+
+  .title {
+    margin: 0;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+
+    &.hide {
+      color: grey;
+    }
+    &.show {
+      padding-bottom: 1rem;
+    }
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 0.8rem;
+  }
+}

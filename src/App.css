@@ -28,6 +28,16 @@
   font-size: 0.9rem;
 }
 
+.App .indent-left {
+  width: calc(100% - 1rem);
+}
+
+.App .indent-right {
+  width: calc(100% - 1rem);
+  margin-left: auto;
+  margin-right: 0;
+}
+
 .App .header {
   display: -ms-grid;
   display: grid;
@@ -104,9 +114,9 @@
 }
 
 .App .header .title {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-area: title;
   font-family: "Limelight", cursive;
   font-size: 1.5rem;
@@ -125,16 +135,6 @@
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-}
-
-.App .intro .indent-left {
-  width: calc(100% - 1rem);
-}
-
-.App .intro .indent-right {
-  width: calc(100% - 1rem);
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .App .intro .quote {
@@ -178,7 +178,7 @@
 .App .paintings .heading {
   border-bottom: solid 1px black;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .App .paintings ul {
@@ -186,5 +186,137 @@
   display: grid;
   margin: 0;
   padding: 0;
+}
+
+.App .museum {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-areas: "title title title title title" "image1 image1 image1 image1 image1" "paragraph paragraph paragraph paragraph paragraph" ". button button button ." "image2 image2 image2 image2 image2" "imageContainer imageContainer imageContainer imageContainer imageContainer" "paragraph2 paragraph2 paragraph2 paragraph2 paragraph2";
+  border-bottom: solid 1px black;
+}
+
+.App .museum .subheading {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: title;
+  border-bottom: solid 1px black;
+  padding: 1rem;
+  margin: 0;
+}
+
+.App .museum img.indent-left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: image1;
+}
+
+.App .museum .paragraph {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: paragraph;
+  padding: 1rem;
+  margin: 0;
+}
+
+.App .museum button {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: button;
+  padding: 1rem;
+  width: 50%;
+  background-color: transparent;
+  border: solid 1px black;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 1rem;
+}
+
+.App .museum img.indent-right {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: image2;
+  padding-left: 1rem;
+}
+
+.App .museum .image-container {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: imageContainer;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.App .museum img.small-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.App .museum .border-left {
+  border-left: solid 1px black;
+}
+
+.App .museum .paragraph2 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: paragraph2;
+  padding: 1rem;
+}
+
+.App .exhibit .heading {
+  font-size: 1.9rem;
+  border-bottom: solid 1px black;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.App .exhibit .swipe-container {
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+.App .exhibit .swipe-container .see-more {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20vw;
+          flex: 0 0 20vw;
+  margin: 0;
+  width: 80vw;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  scroll-snap-align: start;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App footer nav {
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=App.css.map */

@@ -157,7 +157,7 @@ export const exhibits = [
 ];
 
 export const navigationSections = [
-  { title: "Contact us", catergories: [] },
+  { title: "Contact us", catergories: ["Here"] },
   {
     title: "Pablo Picasso",
     catergories: [
@@ -176,7 +176,7 @@ export const navigationSections = [
       '"Pink" period',
       '"African" period',
       "Cubism",
-      '"classNameic" period',
+      '"Classic" period',
       "Surrealism",
       "War. Guernica",
       "Late works",
