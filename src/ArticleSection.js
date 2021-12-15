@@ -14,7 +14,13 @@ export default function ArticleSection({ title, sideWriting, content }) {
           <Arrow />
         </span>
       </h2>
-      <div className="paragraph">{content.map((paragraph) => paragraph)}</div>
+      <div className="paragraph">
+        {content.map((paragraph, index) => (
+          <div className="inline" key={index}>
+            {paragraph}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

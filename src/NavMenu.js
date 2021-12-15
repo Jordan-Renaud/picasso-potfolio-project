@@ -18,7 +18,7 @@ export default function NavMenu({ title, categories }) {
       </summary>
 
       {categories.map((category) => (
-        <li>{category}</li>
+        <li key={category}>{category}</li>
       ))}
     </details>
   );

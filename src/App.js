@@ -25,14 +25,22 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="responsive" src={logo} />
+          <img className="responsive" src={logo} alt="picasso art logo" />
         </a>
 
         <div className="flex-container">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://jordan-renaud.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ticket
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://jordan-renaud.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Address
           </a>
         </div>
@@ -50,17 +58,25 @@ function App() {
         </a>
 
         <div className="flex-container">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://jordan-renaud.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Menu
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://jordan-renaud.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             En
           </a>
         </div>
 
         <a
           className="collection center"
-          href="#"
+          href="https://jordan-renaud.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -108,7 +124,10 @@ function App() {
               ceramicist, stage designer, poet and playwright. He spent most of
               his adult life in France.
             </p>
-            <a className="unimportant-link" href="#">
+            <a
+              className="unimportant-link"
+              href="https://jordan-renaud.netlify.app"
+            >
               read all
             </a>
           </article>
@@ -121,7 +140,11 @@ function App() {
         />
         <section className="news">
           {newsSnippets.map((snippet) => (
-            <NewsSnippet title={snippet.title} date={snippet.date} />
+            <NewsSnippet
+              key={snippet.title}
+              title={snippet.title}
+              date={snippet.date}
+            />
           ))}
 
           <img
@@ -136,7 +159,7 @@ function App() {
           <h2 className="heading">PAINTINGS ARTIST</h2>
 
           {paintings.map((painting) => (
-            <PaintingDisplay categoryData={painting} />
+            <PaintingDisplay key={painting.title} categoryData={painting} />
           ))}
         </section>
         <section className="museum">
@@ -189,6 +212,7 @@ function App() {
           <div className="swipe-container">
             {exhibits.map((exhibit) => (
               <MuseumCard
+                key={exhibit.museumName}
                 imageSrc={exhibit.imageSrc}
                 imageAlt={exhibit.imageAlt}
                 museumName={exhibit.museumName}
@@ -208,7 +232,11 @@ function App() {
         <footer>
           <nav>
             {navigationSections.map((section) => (
-              <NavMenu title={section.title} categories={section.catergories} />
+              <NavMenu
+                key={section.title}
+                title={section.title}
+                categories={section.catergories}
+              />
             ))}
           </nav>
         </footer>
