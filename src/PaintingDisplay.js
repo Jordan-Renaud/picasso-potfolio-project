@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Arrow from "./images/Arrow";
 import "./PaintingDisplay.scss";
 
 export default function PaintingDisplay({ categoryData }) {
@@ -35,7 +36,7 @@ export default function PaintingDisplay({ categoryData }) {
           <span>, {`${year} year`}</span>
         </figcaption>
         <a className="next" href="#">
-          Next ➤
+          Next <Arrow />
         </a>
       </figure>
     </li>

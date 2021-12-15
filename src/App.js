@@ -10,6 +10,7 @@ import NewsSnippet from "./NewsSnippet";
 import PaintingDisplay from "./PaintingDisplay";
 import MuseumCard from "./MuseumCard";
 import NavMenu from "./NavMenu";
+import Arrow from "./images/Arrow";
 import artGallery from "./images/artGallery.png";
 import logo from "./images/logo.png";
 import "./App.scss";
@@ -63,7 +64,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Collection ➤
+          Collection
+          <span className="arrow">
+            <Arrow />
+          </span>
         </a>
 
         <h1 className="title center">WORLD OF PICASSO</h1>
@@ -153,7 +157,12 @@ function App() {
             popular, especially during the season when Barelona hotels are full
             of tourists from all over the world.
           </p>
-          <button>Virtual ➤</button>
+          <button>
+            Virtual
+            <div className="arrow">
+              <Arrow />
+            </div>
+          </button>
           <img
             className="responsive indent-right"
             src="https://www.citynomads.com/wp-content/uploads/2017/12/edited-221917.-Picasso-a-Barcelona22-Museu-Picasso-Barcelona.jpg"
@@ -188,7 +197,9 @@ function App() {
                 location={exhibit.location}
               />
             ))}
-            <div className="see-more">➤</div>
+            <div className="see-more">
+              <Arrow />
+            </div>
           </div>
         </section>
         <ArticleSection

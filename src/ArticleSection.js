@@ -1,3 +1,4 @@
+import Arrow from "./images/Arrow";
 import "./ArticleSection.scss";
 
 export default function ArticleSection({ title, sideWriting, content }) {
@@ -9,7 +10,9 @@ export default function ArticleSection({ title, sideWriting, content }) {
       ></div>
       <h2 className="subheading">
         {title}
-        <span className="black">➤</span>
+        <span className="black">
+          <Arrow />
+        </span>
       </h2>
       <div className="paragraph">{content.map((paragraph) => paragraph)}</div>
     </section>

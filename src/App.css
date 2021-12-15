@@ -7,9 +7,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-.App .make-it-small {
-  width: 5rem;
-  height: 5rem;
+.App .arrow {
+  width: 1rem;
+  height: 1rem;
 }
 
 .App .responsive {
@@ -113,6 +113,12 @@
   border-bottom: 1px solid black;
   padding: 0;
   margin: 0;
+}
+
+.App .header .collection .arrow {
+  padding-left: 0.2rem;
+  width: 0.6rem;
+  height: 0.7rem;
 }
 
 .App .header .title {
@@ -234,9 +240,18 @@
   width: 50%;
   background-color: transparent;
   border: solid 1px black;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .museum button .arrow {
+  width: 0.7rem;
 }
 
 .App .museum img.indent-right {

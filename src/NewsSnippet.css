@@ -37,6 +37,11 @@
   margin: 0;
 }
 
+.NewsSnippet .flex-container .arrow-container {
+  width: 1rem;
+  height: 1rem;
+}
+
 .NewsSnippet .flex-container .greyed {
   color: grey;
   font-size: 0.8rem;
