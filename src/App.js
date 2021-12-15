@@ -11,6 +11,7 @@ import PaintingDisplay from "./PaintingDisplay";
 import MuseumCard from "./MuseumCard";
 import NavMenu from "./NavMenu";
 import Arrow from "./images/Arrow";
+import RightArrow from "./images/RightArrow";
 import artGallery from "./images/artGallery.png";
 import logo from "./images/logo.png";
 import "./App.scss";
@@ -224,7 +225,9 @@ function App() {
               />
             ))}
             <div className="see-more">
-              <Arrow />
+              <div className="arrow-container">
+                <RightArrow />
+              </div>
             </div>
           </div>
         </section>

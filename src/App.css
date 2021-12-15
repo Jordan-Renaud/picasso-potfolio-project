@@ -341,6 +341,10 @@
           align-items: center;
 }
 
+.App .exhibit .swipe-container .see-more .arrow-container {
+  width: 1.5rem;
+}
+
 .App footer nav {
   display: -ms-grid;
   display: grid;

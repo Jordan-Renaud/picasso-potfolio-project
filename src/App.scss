@@ -270,6 +270,9 @@ $border-design: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
+        .arrow-container {
+          width: 1.5rem;
+        }
       }
     }
   }
