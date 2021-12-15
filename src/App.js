@@ -135,11 +135,9 @@ function App() {
         <section className="paintings">
           <h2 className="heading">PAINTINGS ARTIST</h2>
 
-          <ul>
-            {paintings.map((painting) => (
-              <PaintingDisplay categoryData={painting} />
-            ))}
-          </ul>
+          {paintings.map((painting) => (
+            <PaintingDisplay categoryData={painting} />
+          ))}
         </section>
         <section className="museum">
           <h2 className="subheading">The Medeu Picasso, Barselona</h2>

@@ -202,7 +202,7 @@
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
       grid-template-areas: "title title title title title" "image1 image1 image1 image1 image1" "paragraph paragraph paragraph paragraph paragraph" ". button button button ." "image2 image2 image2 image2 image2" "imageContainer imageContainer imageContainer imageContainer imageContainer" "paragraph2 paragraph2 paragraph2 paragraph2 paragraph2";
-  border-bottom: solid 1px black;
+  border-bottom: 1px solid black;
 }
 
 .App .museum .subheading {
@@ -210,7 +210,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: title;
-  border-bottom: solid 1px black;
+  border-bottom: 1px solid black;
   padding: 1rem;
   margin: 0;
 }

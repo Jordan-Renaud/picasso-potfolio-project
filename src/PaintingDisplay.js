@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Arrow from "./images/Arrow";
 import "./PaintingDisplay.scss";
 
@@ -8,37 +7,28 @@ export default function PaintingDisplay({ categoryData }) {
   const paintingImage = categoryData.paintingImage;
   const year = categoryData.year;
 
-  const [showPainting, setShowPainting] = useState(false);
-  const [importantHeading, setImportantHeading] = useState("not-important");
-
-  function showHidePainting() {
-    setShowPainting(showPainting ? false : true);
-    setImportantHeading(
-      importantHeading === "not-important" ? "important" : "not-important"
-    );
-  }
-
   return (
-    <li
-      className={`PaintingDisplay ${importantHeading}`}
-      onClick={showHidePainting}
-    >
-      <p className="catergory-title">{catergory}</p>
+    <details className="PaintingDisplay">
+      <summary className="catergory-title">{catergory}</summary>
 
-      <figure className={`${showPainting ? "show" : "hide"}`}>
+      <figure>
         <img
           className="responsive painting"
           src={paintingImage}
-          alt="Absithe drinker"
+          alt={title + " painting"}
         />
         <figcaption className="caption">
           {title}
           <span>, {`${year} year`}</span>
         </figcaption>
-        <a className="next" href="#">
-          Next <Arrow />
-        </a>
+
+        <button className="next">
+          <p>Next</p>
+          <div className="arrow">
+            <Arrow />
+          </div>
+        </button>
       </figure>
-    </li>
+    </details>
   );
 }

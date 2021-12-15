@@ -179,11 +179,11 @@ $border-design: 1px solid black;
       "image2 image2 image2 image2 image2"
       "imageContainer imageContainer imageContainer imageContainer imageContainer"
       "paragraph2 paragraph2 paragraph2 paragraph2 paragraph2";
-    border-bottom: solid 1px black;
+    border-bottom: $border-design;
 
     .subheading {
       grid-area: title;
-      border-bottom: solid 1px black;
+      border-bottom: $border-design;
       padding: 1rem;
       margin: 0;
     }
