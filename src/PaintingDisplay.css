@@ -8,6 +8,7 @@
 .PaintingDisplay .catergory-title {
   color: grey;
   padding: 1rem;
+  list-style-type: none;
 }
 
 .PaintingDisplay[open] .catergory-title {

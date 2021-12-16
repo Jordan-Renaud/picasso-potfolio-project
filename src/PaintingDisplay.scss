@@ -9,6 +9,7 @@ $border-design: 1px solid black;
   .catergory-title {
     color: grey;
     padding: 1rem;
+    list-style-type: none;
   }
 
   &[open] {
