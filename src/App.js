@@ -29,7 +29,7 @@ function App() {
           <img className="responsive" src={logo} alt="picasso art logo" />
         </a>
 
-        <div className="flex-container">
+        <div className="flex-container tickets">
           <a
             href="https://jordan-renaud.netlify.app"
             target="_blank"
@@ -58,7 +58,7 @@ function App() {
           />
         </a>
 
-        <div className="flex-container">
+        <div className="flex-container menu">
           <a
             href="https://jordan-renaud.netlify.app"
             target="_blank"

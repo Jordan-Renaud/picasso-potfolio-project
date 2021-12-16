@@ -137,6 +137,14 @@
   display: none;
 }
 
+.App .header .flex-container.tickets {
+  grid-area: tickets;
+}
+
+.App .header .flex-container.menu {
+  grid-area: menu;
+}
+
 .App .intro {
   text-align: justify;
   margin-top: 1rem;
@@ -348,5 +356,56 @@
 .App footer nav {
   display: -ms-grid;
   display: grid;
+}
+
+@media (min-width: 768px) {
+  .App .header {
+    -ms-grid-rows: (6vh)[3];
+        grid-template-rows: repeat(3, 6vh);
+        grid-template-areas: "logo tickets header-img-link header-img-link menu" "logo title title title title" "collection title title title title";
+  }
+  .App .header .logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: none;
+  }
+  .App .header .logo img {
+    width: 80%;
+  }
+  .App .header .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0.3rem;
+    border-bottom: 1px solid black;
+  }
+  .App .header .flex-container a {
+    color: black;
+    text-decoration: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 0.8rem;
+  }
+  .App .header .header-img-link {
+    border-bottom: 1px solid black;
+  }
+  .App .header .collection {
+    font-size: 0.8rem;
+  }
+  .App .header .collection .arrow {
+    padding-left: 0.3rem;
+    height: 0.8rem;
+  }
+  .App .header .title {
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */
