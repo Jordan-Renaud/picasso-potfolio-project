@@ -398,5 +398,56 @@ $border-design: 1px solid black;
         border: none;
       }
     }
+
+    .museum {
+      grid-template-rows: 4rem 1fr 1fr 4rem 1fr 1fr 8rem;
+      grid-template-areas:
+        "title title title title title"
+        "image1 image1 paragraph . ."
+        "image1 image1 paragraph . ."
+        "image1 image1 button image2 image2"
+        ". . . image2 image2"
+        ". . . image2 image2"
+        "imageContainer imageContainer paragraph2 paragraph2 paragraph2";
+
+      .subheading {
+        padding: 1.5rem 1rem;
+      }
+
+      img.indent-left {
+        width: 100%;
+      }
+
+      .paragraph {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        margin: 0rem;
+        align-items: center;
+        justify-content: center;
+
+        .arrow {
+          padding-left: 0.2rem;
+        }
+      }
+
+      img.indent-right {
+        width: 100%;
+        padding: 0;
+      }
+
+      .image-container {
+        border-bottom: none;
+      }
+
+      .paragraph2 {
+        margin: 0;
+        border-top: $border-design;
+      }
+    }
   }
 }

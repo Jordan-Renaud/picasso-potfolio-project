@@ -1,5 +1,5 @@
 .NewsSnippet {
-  width: 80vw;
+  width: 100%;
   border-right: solid 1px black;
   border-bottom: solid 1px black;
   padding: 1rem;
@@ -18,7 +18,6 @@
 
 .NewsSnippet .title {
   font-size: 1.1rem;
-  text-align: justify;
 }
 
 .NewsSnippet .flex-container {
@@ -45,5 +44,15 @@
 .NewsSnippet .flex-container .greyed {
   color: grey;
   font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .NewsSnippet {
+    padding: 0.5rem;
+  }
+  .NewsSnippet .title {
+    font-size: 1rem;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=NewsSnippet.css.map */

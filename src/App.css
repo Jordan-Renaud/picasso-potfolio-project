@@ -148,6 +148,9 @@
 .App .intro {
   text-align: justify;
   margin-top: 1rem;
+}
+
+.App .intro .images {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
@@ -177,6 +180,8 @@
 
 .App .news .responsive {
   display: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .App .news .side-writing {
@@ -406,6 +411,126 @@
   }
   .App .header .title {
     font-size: 2.5rem;
+  }
+  .App .intro {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "images images images biography biography";
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0;
+  }
+  .App .intro .images {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: images;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 3rem 1fr;
+        grid-template-rows: 1fr 3rem 1fr;
+    padding: 0.5rem;
+    gap: 0;
+  }
+  .App .intro .images img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .App .intro .images img:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .App .intro .images .quote {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .App .intro .biography {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: biography;
+    border: none;
+    border-left: 1px solid black;
+  }
+  .App .intro .biography .subheading {
+    text-align: left;
+  }
+  .App .news {
+    -ms-grid-columns: 20vw (1fr)[3] 10vw;
+        grid-template-columns: 20vw repeat(3, 1fr) 10vw;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    border-bottom: 1px solid black;
+  }
+  .App .news .responsive {
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 2 / 6 / 5;
+    width: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .App .news .side-writing {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 5 / 6 / 6;
+    border: none;
+  }
+  .App .museum {
+    -ms-grid-rows: 4rem 1fr 1fr 4rem 1fr 1fr 8rem;
+        grid-template-rows: 4rem 1fr 1fr 4rem 1fr 1fr 8rem;
+        grid-template-areas: "title title title title title" "image1 image1 paragraph . ." "image1 image1 paragraph . ." "image1 image1 button image2 image2" ". . . image2 image2" ". . . image2 image2" "imageContainer imageContainer paragraph2 paragraph2 paragraph2";
+  }
+  .App .museum .subheading {
+    padding: 1.5rem 1rem;
+  }
+  .App .museum img.indent-left {
+    width: 100%;
+  }
+  .App .museum .paragraph {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .App .museum button {
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .museum button .arrow {
+    padding-left: 0.2rem;
+  }
+  .App .museum img.indent-right {
+    width: 100%;
+    padding: 0;
+  }
+  .App .museum .image-container {
+    border-bottom: none;
+  }
+  .App .museum .paragraph2 {
+    margin: 0;
+    border-top: 1px solid black;
   }
 }
 /*# sourceMappingURL=App.css.map */
