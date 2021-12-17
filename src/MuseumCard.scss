@@ -33,3 +33,16 @@
     }
   }
 }
+
+@media (min-width: 1425px) {
+  .MuseumCard {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: none;
+    scroll-snap-type: none;
+
+    img {
+      width: 100%;
+    }
+  }
+}

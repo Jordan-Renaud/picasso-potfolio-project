@@ -451,3 +451,39 @@ $border-design: 1px solid black;
     }
   }
 }
+
+@media (min-width: 1425px) {
+  .App {
+    .exhibit {
+      width: 100vw;
+      .swipe-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        overflow-x: visible;
+
+        & > * {
+          scroll-snap-align: none;
+          scroll-snap-type: none;
+          box-sizing: border-box;
+        }
+        .see-more {
+          width: 100%;
+          height: 100%;
+          border-right: none;
+          .arrow-container {
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+    .news {
+      width: unset;
+    }
+    .exhibit {
+      width: unset;
+      .swipe-container {
+        width: unset;
+      }
+    }
+  }
+}

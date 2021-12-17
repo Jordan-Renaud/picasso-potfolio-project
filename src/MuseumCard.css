@@ -38,4 +38,15 @@
     height: 20rem;
   }
 }
+
+@media (min-width: 1425px) {
+  .MuseumCard {
+    width: 100%;
+    height: 100%;
+  }
+  .MuseumCard img {
+    height: 100%;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=MuseumCard.css.map */
