@@ -606,10 +606,14 @@
   .App .header .title {
     font-size: 4rem;
   }
+  .App .biography .subheading {
+    font-size: 2rem;
+  }
   .App .exhibit {
-    width: 100vw;
+    width: unset;
   }
   .App .exhibit .swipe-container {
+    width: unset;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[5];
@@ -632,12 +636,6 @@
     width: 1.5rem;
   }
   .App .news {
-    width: unset;
-  }
-  .App .exhibit {
-    width: unset;
-  }
-  .App .exhibit .swipe-container {
     width: unset;
   }
 }

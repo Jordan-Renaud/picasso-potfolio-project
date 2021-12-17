@@ -496,9 +496,17 @@ $border-design: 1px solid black;
         font-size: 4rem;
       }
     }
+
+    .biography {
+      .subheading {
+        font-size: 2rem;
+      }
+    }
+
     .exhibit {
-      width: 100vw;
+      width: unset;
       .swipe-container {
+        width: unset;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         overflow-x: visible;
@@ -520,12 +528,6 @@ $border-design: 1px solid black;
     }
     .news {
       width: unset;
-    }
-    .exhibit {
-      width: unset;
-      .swipe-container {
-        width: unset;
-      }
     }
   }
 }

@@ -1,7 +1,7 @@
 .ArticleSection {
   display: grid;
-  grid-template-rows: 3rem, 1fr;
-  grid-template-columns: 1fr, 4fr;
+  grid-template-rows: 3rem 1fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-areas: "side subheading" "side paragraph";
   gap: 1rem;
   border-bottom: solid 1px black;
@@ -36,6 +36,18 @@
     padding-right: 1rem;
     .inline {
       display: inline;
+    }
+  }
+}
+
+@media (min-width: 1425px) {
+  .ArticleSection {
+    grid-template-rows: 6rem 1fr;
+    grid-template-columns: 2fr 3fr;
+    padding-bottom: 3rem;
+
+    .subheading {
+      align-self: end;
     }
   }
 }

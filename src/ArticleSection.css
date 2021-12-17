@@ -1,10 +1,10 @@
 .ArticleSection {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 3rem, 1fr;
-      grid-template-rows: 3rem, 1fr;
-  -ms-grid-columns: 1fr, 4fr;
-      grid-template-columns: 1fr, 4fr;
+  -ms-grid-rows: 3rem 1fr;
+      grid-template-rows: 3rem 1fr;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
       grid-template-areas: "side subheading" "side paragraph";
   gap: 1rem;
   border-bottom: solid 1px black;
@@ -49,5 +49,20 @@
 
 .ArticleSection .paragraph .inline {
   display: inline;
+}
+
+@media (min-width: 1425px) {
+  .ArticleSection {
+    -ms-grid-rows: 6rem 1fr;
+        grid-template-rows: 6rem 1fr;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    padding-bottom: 3rem;
+  }
+  .ArticleSection .subheading {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
 }
 /*# sourceMappingURL=ArticleSection.css.map */
