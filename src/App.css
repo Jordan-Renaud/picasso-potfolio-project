@@ -381,6 +381,12 @@
   .App .header .logo img {
     width: 80%;
   }
+  .App .header .title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: title;
+  }
   .App .header .flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -391,6 +397,16 @@
     padding: 0 0.3rem;
     border-bottom: 1px solid black;
   }
+  .App .header .flex-container.tickets {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: tickets;
+  }
+  .App .header .flex-container.menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: menu;
+  }
   .App .header .flex-container a {
     color: black;
     text-decoration: none;
@@ -400,9 +416,16 @@
     font-size: 0.8rem;
   }
   .App .header .header-img-link {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: header-img-link;
     border-bottom: 1px solid black;
   }
   .App .header .collection {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: collection;
     font-size: 0.8rem;
   }
   .App .header .collection .arrow {
@@ -498,16 +521,32 @@
         grid-template-areas: "title title title title title" "image1 image1 paragraph . ." "image1 image1 paragraph . ." "image1 image1 button image2 image2" ". . . image2 image2" ". . . image2 image2" "imageContainer imageContainer paragraph2 paragraph2 paragraph2";
   }
   .App .museum .subheading {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: title;
     padding: 1.5rem 1rem 2rem 1rem;
   }
   .App .museum img.indent-left {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: image1;
     width: 100%;
   }
   .App .museum .paragraph {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: paragraph;
     padding: 0.5rem;
     font-size: 0.9rem;
   }
   .App .museum button {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: button;
     width: 100%;
     height: 100%;
     margin: 0rem;
@@ -522,48 +561,113 @@
     padding-left: 0.2rem;
   }
   .App .museum img.indent-right {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: image2;
     width: 100%;
     padding: 0;
   }
   .App .museum .image-container {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: imageContainer;
     border-bottom: none;
   }
   .App .museum .paragraph2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: paragraph2;
     margin: 0;
     border-top: 1px solid black;
   }
 }
 
 @media (min-width: 1425px) {
+  .App .header {
+    -ms-grid-rows: (8vh)[3];
+        grid-template-rows: repeat(3, 8vh);
+  }
+  .App .header .logo {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: logo;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: none;
+  }
+  .App .header .logo img {
+    width: 80%;
+  }
+  .App .header .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0.3rem;
+    border-bottom: 1px solid black;
+  }
+  .App .header .flex-container a {
+    color: black;
+    text-decoration: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 0.8rem;
+  }
+  .App .header .header-img-link {
+    border-bottom: 1px solid black;
+  }
+  .App .header .collection {
+    font-size: 0.8rem;
+  }
+  .App .header .collection .arrow {
+    padding-left: 0.3rem;
+    height: 0.8rem;
+  }
+  .App .header .title {
+    font-size: 2.5rem;
+  }
+  .App .exhibit {
+    width: 100vw;
+  }
   .App .exhibit .swipe-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
+    overflow-x: visible;
+  }
+  .App .exhibit .swipe-container > * {
+    scroll-snap-align: none;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .App .exhibit .swipe-container .see-more {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 20vw;
-            flex: 0 0 20vw;
-    margin: 0;
-    width: 80vw;
-    border-right: solid 1px black;
-    border-bottom: solid 1px black;
-    scroll-snap-align: start;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
+    height: 100%;
+    border-right: none;
   }
   .App .exhibit .swipe-container .see-more .arrow-container {
     width: 1.5rem;
+  }
+  .App .news {
+    width: unset;
+  }
+  .App .exhibit {
+    width: unset;
+  }
+  .App .exhibit .swipe-container {
+    width: unset;
   }
 }
 /*# sourceMappingURL=App.css.map */
