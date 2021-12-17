@@ -24,4 +24,13 @@
   list-style-type: none;
   font-size: 0.8rem;
 }
+
+@media (min-width: 768px) {
+  .NavMenu .title {
+    font-size: 1.3rem;
+  }
+  .NavMenu li {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=NavMenu.css.map */
