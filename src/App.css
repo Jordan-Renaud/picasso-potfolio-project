@@ -498,7 +498,7 @@
         grid-template-areas: "title title title title title" "image1 image1 paragraph . ." "image1 image1 paragraph . ." "image1 image1 button image2 image2" ". . . image2 image2" ". . . image2 image2" "imageContainer imageContainer paragraph2 paragraph2 paragraph2";
   }
   .App .museum .subheading {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 2rem 1rem;
   }
   .App .museum img.indent-left {
     width: 100%;

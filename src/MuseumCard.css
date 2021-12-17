@@ -26,4 +26,16 @@
   text-align: center;
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .MuseumCard {
+    width: 30vw;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30vw;
+            flex: 0 0 30vw;
+  }
+  .MuseumCard img {
+    height: 20rem;
+  }
+}
 /*# sourceMappingURL=MuseumCard.css.map */
