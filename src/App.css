@@ -609,6 +609,10 @@
   .App .biography .subheading {
     font-size: 2rem;
   }
+  .App .museum .paragraph {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
   .App .exhibit {
     width: unset;
   }

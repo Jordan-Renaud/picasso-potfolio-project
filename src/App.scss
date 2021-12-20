@@ -503,6 +503,13 @@ $border-design: 1px solid black;
       }
     }
 
+    .museum {
+      .paragraph {
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+
     .exhibit {
       width: unset;
       .swipe-container {
@@ -526,6 +533,7 @@ $border-design: 1px solid black;
         }
       }
     }
+
     .news {
       width: unset;
     }
