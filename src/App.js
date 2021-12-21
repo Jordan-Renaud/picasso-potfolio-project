@@ -17,6 +17,10 @@ import logo from "./images/logo.png";
 import "./App.scss";
 
 function App() {
+  function checkIfIsLastItem(item, array) {
+    return item === array[array.length - 1];
+  }
+
   return (
     <div className="App">
       <header className="header">
@@ -244,6 +248,7 @@ function App() {
                 key={section.title}
                 title={section.title}
                 categories={section.catergories}
+                isLastItem={checkIfIsLastItem(section, navigationSections)}
               />
             ))}
           </nav>

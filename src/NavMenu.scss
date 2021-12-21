@@ -43,11 +43,43 @@
 
 @media (min-width: 1425px) {
   .NavMenu {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    padding: 0;
+
     .title {
-      font-size: 1.3rem;
+      font-weight: normal;
+      font-size: 0.8rem;
+      border-right: black 1px solid;
+      margin: 0;
+      align-self: center;
+      height: 100%;
+      box-sizing: border-box;
+
+      &.hide {
+        color: black;
+        padding: 0;
+      }
+      &.show {
+        color: black;
+        padding: 0;
+      }
     }
-    li {
-      font-size: 1rem;
+    .contents {
+      border-top: black 1px solid;
+      border-right: black 1px solid;
+      height: 100%;
+      li {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        &.hide {
+          display: block;
+        }
+      }
+      &.no-border {
+        border-right: none;
+      }
     }
   }
 }
