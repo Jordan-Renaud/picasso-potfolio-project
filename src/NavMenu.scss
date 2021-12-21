@@ -21,10 +21,27 @@
   li {
     list-style-type: none;
     font-size: 0.8rem;
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: block;
+    }
   }
 }
 
 @media (min-width: 768px) {
+  .NavMenu {
+    .title {
+      font-size: 1.3rem;
+    }
+    li {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1425px) {
   .NavMenu {
     .title {
       font-size: 1.3rem;

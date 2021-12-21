@@ -25,7 +25,24 @@
   font-size: 0.8rem;
 }
 
+.NavMenu li.hide {
+  display: none;
+}
+
+.NavMenu li.show {
+  display: block;
+}
+
 @media (min-width: 768px) {
+  .NavMenu .title {
+    font-size: 1.3rem;
+  }
+  .NavMenu li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1425px) {
   .NavMenu .title {
     font-size: 1.3rem;
   }

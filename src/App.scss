@@ -537,5 +537,9 @@ $border-design: 1px solid black;
     .news {
       width: unset;
     }
+
+    footer nav {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
 }

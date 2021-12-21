@@ -9,17 +9,19 @@ export default function NavMenu({ title, categories }) {
   }
 
   return (
-    <details className="NavMenu">
-      <summary
+    <div className="NavMenu">
+      <h3
         className={`title ${menuOnScreen ? "show" : "hide"}`}
         onClick={updateMenuState}
       >
         {title}
-      </summary>
+      </h3>
 
       {categories.map((category) => (
-        <li key={category}>{category}</li>
+        <li key={category} className={`${menuOnScreen ? "show" : "hide"}`}>
+          {category}
+        </li>
       ))}
-    </details>
+    </div>
   );
 }
