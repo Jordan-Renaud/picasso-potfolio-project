@@ -10,12 +10,14 @@ export default function NavMenu({ title, categories, isLastItem }) {
 
   return (
     <div className="NavMenu">
-      <h3
-        className={`title ${menuOnScreen ? "show" : "hide"}`}
-        onClick={updateMenuState}
-      >
-        {title}
-      </h3>
+      <div className={`title-container  ${isLastItem ? "no-border" : ""}`}>
+        <h3
+          className={`title ${menuOnScreen ? "show" : "hide"}`}
+          onClick={updateMenuState}
+        >
+          {title}
+        </h3>
+      </div>
       <div className={`contents ${isLastItem ? "no-border" : ""}`}>
         {categories.map((category) => (
           <li key={category} className={`${menuOnScreen ? "show" : "hide"}`}>

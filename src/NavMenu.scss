@@ -45,16 +45,26 @@
   .NavMenu {
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 3rem 1fr;
+    grid-template-rows: 3rem 18rem;
+    border-bottom: none;
     padding: 0;
+
+    .title-container {
+      height: 100%;
+      border-right: black 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.no-border {
+        border-right: none;
+      }
+    }
 
     .title {
       font-weight: normal;
       font-size: 0.8rem;
-      border-right: black 1px solid;
       margin: 0;
       align-self: center;
-      height: 100%;
       box-sizing: border-box;
 
       &.hide {
@@ -70,6 +80,8 @@
       border-top: black 1px solid;
       border-right: black 1px solid;
       height: 100%;
+      padding-top: 1rem;
+
       li {
         font-size: 0.8rem;
         line-height: 1.5rem;
