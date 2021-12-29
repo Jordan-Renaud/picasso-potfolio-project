@@ -1,7 +1,13 @@
 import Arrow from "./images/Arrow";
 import "./PaintingDisplay.scss";
 
-export default function PaintingDisplay({ categoryData, isLastItem }) {
+export default function PaintingDisplay({
+  categoryData,
+  isLastItem,
+  changePainting,
+  paintingIndex,
+  paintingOnScreen,
+}) {
   const catergory = categoryData.catergory;
   const title = categoryData.title;
   const paintingImage = categoryData.paintingImage;
@@ -21,7 +27,7 @@ export default function PaintingDisplay({ categoryData, isLastItem }) {
           {title},<span> {`${year} year`}</span>
         </figcaption>
 
-        <button className="next">
+        <button className="next" onClick={changePainting}>
           <p>Next</p>
           <div className="arrow">
             <Arrow />

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   articles,
   newsSnippets,
@@ -17,8 +18,19 @@ import logo from "./images/logo.png";
 import "./App.scss";
 
 function App() {
+  const [currentPaintingDisplayed, setCurrentPaintingDisplayed] = useState(0);
+
   function checkIfIsLastItem(item, array) {
     return item === array[array.length - 1];
+  }
+
+  function nextPainting() {
+    console.log("next");
+    if (currentPaintingDisplayed === paintings.length) {
+      setCurrentPaintingDisplayed(0);
+    } else {
+      setCurrentPaintingDisplayed(currentPaintingDisplayed++);
+    }
   }
 
   return (
@@ -164,11 +176,14 @@ function App() {
         <section className="paintings">
           <h2 className="heading">PAINTINGS ARTIST</h2>
 
-          {paintings.map((painting) => (
+          {paintings.map((painting, index) => (
             <PaintingDisplay
               key={painting.title}
               categoryData={painting}
               isLastItem={checkIfIsLastItem(painting, paintings)}
+              changePainting={nextPainting}
+              paintingIndex={index}
+              paintingOnScreen={currentPaintingDisplayed}
             />
           ))}
         </section>

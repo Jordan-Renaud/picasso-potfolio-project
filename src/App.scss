@@ -546,8 +546,8 @@ $border-design: 1px solid black;
 
     .paintings {
       display: grid;
-      grid-template-rows: 8rem 80vh;
-      grid-template-columns: repeat(9, minmax(1fr, 20vw));
+      grid-template-rows: 8rem 40rem;
+      grid-template-columns: repeat(9, 1fr);
       align-items: center;
 
       .heading {

@@ -116,7 +116,7 @@
         grid-template-areas: "painting painting" "caption next";
     width: 80%;
     margin: 0 auto;
-    height: 70vh;
+    height: 35rem;
   }
   .PaintingDisplay[open] figure .caption {
     -ms-grid-row: 2;
