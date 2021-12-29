@@ -18,8 +18,7 @@ export default function PaintingDisplay({ categoryData }) {
           alt={title + " painting"}
         />
         <figcaption className="caption">
-          {title}
-          <span>, {`${year} year`}</span>
+          {title},<span> {`${year} year`}</span>
         </figcaption>
 
         <button className="next">

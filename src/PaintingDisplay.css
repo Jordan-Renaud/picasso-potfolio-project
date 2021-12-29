@@ -75,4 +75,90 @@
   -ms-grid-column-span: 2;
   grid-area: painting;
 }
+
+@media (min-width: 1425px) {
+  .PaintingDisplay {
+    border-bottom: none;
+    border-right: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+  .PaintingDisplay .catergory-title {
+    -webkit-writing-mode: sideways-lr;
+        -ms-writing-mode: sideways-lr;
+            writing-mode: sideways-lr;
+    border: none;
+    height: 100%;
+  }
+  @supports not ((-webkit-writing-mode: sideways-lr) or (writing-mode: sideways-lr)) {
+    .PaintingDisplay .catergory-title {
+      -webkit-writing-mode: vertical-lr;
+          -ms-writing-mode: tb-lr;
+              writing-mode: vertical-lr;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+  .PaintingDisplay[open] .catergory-title {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    height: 1rem;
+  }
+  .PaintingDisplay[open] figure {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 2rem;
+        grid-template-rows: 1fr 2rem;
+        grid-template-areas: "painting painting" "caption next";
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+  }
+  .PaintingDisplay[open] figure .caption {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: caption;
+    display: block;
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .PaintingDisplay[open] figure .next {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: next;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5rem;
+    width: 5rem;
+  }
+  .PaintingDisplay[open] figure .next p {
+    margin: 0;
+  }
+  .PaintingDisplay[open] figure .next .arrow {
+    width: 0.8rem;
+  }
+  .PaintingDisplay[open] figure .painting {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: painting;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 /*# sourceMappingURL=PaintingDisplay.css.map */

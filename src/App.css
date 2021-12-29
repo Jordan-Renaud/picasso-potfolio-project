@@ -616,6 +616,10 @@
   .App .exhibit {
     width: unset;
   }
+  .App .exhibit .heading {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
   .App .exhibit .swipe-container {
     width: unset;
     display: -ms-grid;
@@ -641,6 +645,26 @@
   }
   .App .news {
     width: unset;
+  }
+  .App .paintings {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 7rem 80vh;
+        grid-template-rows: 7rem 80vh;
+    -ms-grid-columns: (minmax(1fr, 20vw))[9];
+        grid-template-columns: repeat(9, minmax(1fr, 20vw));
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .paintings .heading {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-area: 1 / 1 / 2 / 10;
+    font-size: 3rem;
+    padding: 2rem 0;
   }
   .App footer nav {
     -ms-grid-columns: (1fr)[5];
