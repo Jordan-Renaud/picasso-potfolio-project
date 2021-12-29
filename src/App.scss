@@ -546,7 +546,7 @@ $border-design: 1px solid black;
 
     .paintings {
       display: grid;
-      grid-template-rows: 7rem 80vh;
+      grid-template-rows: 8rem 80vh;
       grid-template-columns: repeat(9, minmax(1fr, 20vw));
       align-items: center;
 
@@ -554,6 +554,7 @@ $border-design: 1px solid black;
         grid-area: 1 / 1 / 2 / 10;
         font-size: 3rem;
         padding: 2rem 0;
+        border: none;
       }
     }
 

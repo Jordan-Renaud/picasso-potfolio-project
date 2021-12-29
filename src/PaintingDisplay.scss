@@ -63,13 +63,13 @@ $border-design: 1px solid black;
 
 @media (min-width: 1425px) {
   .PaintingDisplay {
-    border-bottom: none;
-    border-right: $border-design;
+    border: $border-design;
+    border-left: none;
     width: 100%;
     height: 100%;
 
     &.no-border {
-      border: none;
+      border-right: none;
     }
 
     .catergory-title {
