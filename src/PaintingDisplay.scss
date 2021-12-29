@@ -68,6 +68,10 @@ $border-design: 1px solid black;
     width: 100%;
     height: 100%;
 
+    &.no-border {
+      border: none;
+    }
+
     .catergory-title {
       writing-mode: sideways-lr;
       border: none;

@@ -83,6 +83,9 @@
     width: 100%;
     height: 100%;
   }
+  .PaintingDisplay.no-border {
+    border: none;
+  }
   .PaintingDisplay .catergory-title {
     -webkit-writing-mode: sideways-lr;
         -ms-writing-mode: sideways-lr;

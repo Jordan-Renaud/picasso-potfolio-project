@@ -165,7 +165,11 @@ function App() {
           <h2 className="heading">PAINTINGS ARTIST</h2>
 
           {paintings.map((painting) => (
-            <PaintingDisplay key={painting.title} categoryData={painting} />
+            <PaintingDisplay
+              key={painting.title}
+              categoryData={painting}
+              isLastItem={checkIfIsLastItem(painting, paintings)}
+            />
           ))}
         </section>
         <section className="museum">

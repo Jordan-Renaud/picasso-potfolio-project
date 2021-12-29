@@ -1,14 +1,14 @@
 import Arrow from "./images/Arrow";
 import "./PaintingDisplay.scss";
 
-export default function PaintingDisplay({ categoryData }) {
+export default function PaintingDisplay({ categoryData, isLastItem }) {
   const catergory = categoryData.catergory;
   const title = categoryData.title;
   const paintingImage = categoryData.paintingImage;
   const year = categoryData.year;
 
   return (
-    <details className="PaintingDisplay">
+    <details className={`PaintingDisplay ${isLastItem ? "no-border" : ""}`}>
       <summary className="catergory-title">{catergory}</summary>
 
       <figure>
