@@ -178,7 +178,7 @@ function App() {
 
           {paintings.map((painting, index) => (
             <PaintingDisplay
-              key={painting.title}
+              key={painting.title + currentPaintingDisplayed}
               categoryData={painting}
               isLastItem={checkIfIsLastItem(painting, paintings)}
               changePainting={nextPainting}
