@@ -14,7 +14,10 @@ export default function PaintingDisplay({
   const year = categoryData.year;
 
   return (
-    <details className={`PaintingDisplay ${isLastItem ? "no-border" : ""}`}>
+    <details
+      className={`PaintingDisplay ${isLastItem ? "no-border" : ""}`}
+      open={paintingIndex === paintingOnScreen}
+    >
       <summary className="catergory-title">{catergory}</summary>
 
       <figure>

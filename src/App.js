@@ -26,10 +26,10 @@ function App() {
 
   function nextPainting() {
     console.log("next");
-    if (currentPaintingDisplayed === paintings.length) {
+    if (currentPaintingDisplayed === paintings.length - 1) {
       setCurrentPaintingDisplayed(0);
     } else {
-      setCurrentPaintingDisplayed(currentPaintingDisplayed++);
+      setCurrentPaintingDisplayed(currentPaintingDisplayed + 1);
     }
   }
 
