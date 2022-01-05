@@ -1,3 +1,4 @@
+import { useMediaQuery } from "react-responsive";
 import Arrow from "./images/Arrow";
 import "./PaintingDisplay.scss";
 
@@ -13,10 +14,21 @@ export default function PaintingDisplay({
   const paintingImage = categoryData.paintingImage;
   const year = categoryData.year;
 
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1425px)",
+  });
+
+  function handleClick(event) {
+    if (isDesktopOrLaptop) {
+      event.preventDefault();
+    }
+  }
+
   return (
     <details
       className={`PaintingDisplay ${isLastItem ? "no-border" : ""}`}
       open={paintingIndex === paintingOnScreen}
+      onClick={handleClick}
     >
       <summary className="catergory-title">{catergory}</summary>
 
