@@ -162,6 +162,7 @@ function App() {
               key={snippet.title}
               title={snippet.title}
               date={snippet.date}
+              isLastItem={checkIfIsLastItem(snippet, newsSnippets)}
             />
           ))}
 
